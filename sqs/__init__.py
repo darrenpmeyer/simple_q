@@ -1,4 +1,5 @@
-from sqs.sqs_app import app
+from flask_api import FlaskAPI, exceptions
+app = FlaskAPI(__name__)
 
 
 @app.route('/', methods=['GET'])
